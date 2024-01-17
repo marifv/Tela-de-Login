@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/fonts.css" rel="stylesheet">
+    <link href="/styles/media.css" rel="stylesheet">
+    <title>FAVET</title>
+</head>
+<body>
+    <header>
+        <div id="title"> </div>
+        
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#" id="inscreva-se-btn"><li>Login</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Inscreva-se</span></h2>
+            <h2>Na Favet</h2>
+            <p>
+                Centro comunitário, espaço para venda dos materiais reciclados, realização de eventos e muito mais.
+            </p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="password" placeholder="Senha">
+                <input type="submit" value="Entrar">
+            </form>
+        </aside>
+
+        <article>
+            <img src="images/logo.png" alt="FAVET">
+        </article>
+    </main>
+    
+</body>
+</html>
+
+<style>
+    body{
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: rgb(54, 179, 95);
+}
+
+a:hover{
+    color: rgb(54, 179, 95);
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(54, 179, 95);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(54, 179, 95);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 580px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(54, 179, 95);
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+</style>
